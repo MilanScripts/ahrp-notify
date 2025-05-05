@@ -3,7 +3,7 @@ game 'gta5'
 
 ui_page 'ui/index.html'
 
-author 'Arnhem Roleplay <MilanScripts>'
+author 'MilanScripts'
 
 client_scripts {
     'client.lua'
