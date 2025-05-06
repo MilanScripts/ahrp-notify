@@ -1,4 +1,4 @@
-RegisterNetEvent('ahrp-notify:client:notify', function(type, title, message, duration)
+RegisterNetEvent('milanscripts:client:notify', function(type, title, message, duration)
     if not type or not title or not message then return end
 
     duration = duration or 5000
