@@ -9,11 +9,11 @@ local function Notify(target, type, title, message, duration)
         for id in string.gmatch(ids, '([^,]+)') do
             local playerId = tonumber(id)
             if playerId then
-                TriggerClientEvent('ahrp-notify:client:notify', playerId, type, title, message, duration)
+                TriggerClientEvent('milanscripts:notify:client:notify', playerId, type, title, message, duration)
             end
         end
     else
-        print("[ahrp-notify] Invalid target format. Use 'src/playerId' or 'src/id1,id2,...'")
+        print("[milanscripts notify] Invalid target format. Use 'src/playerId' or 'src/id1,id2,...'")
     end
 end
 
