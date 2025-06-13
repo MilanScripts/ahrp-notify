@@ -1,9 +1,9 @@
 
-# 🔔 ahrp-notify – FiveM Notification System
+# 🔔 milanscripts-notify – FiveM Notification System
 
 ![Notification Example](https://milanscripts.vercel.app/notify.png?height=300&width=500)
 
-**ahrp-notify** is a lightweight and customizable notification system for FiveM. It supports both client-side and server-side exports for sending modern and visually styled notifications to players.
+**milanscripts-notify** is a lightweight and customizable notification system for FiveM. It supports both client-side and server-side exports for sending modern and visually styled notifications to players.
 
 ---
 
@@ -23,7 +23,7 @@
 2. Add the following to your `server.cfg`:
 
 ```
-ensure ahrp-notify
+ensure milanscripts-notify
 ```
 
 ---
@@ -33,7 +33,7 @@ ensure ahrp-notify
 ### # CLIENT
 
 ```lua
-exports['ahrp-notify']:notify(
+exports['milanscripts-notify']:notify(
     type,       -- "success", "error", "info", "warning"
     title,      -- Notification title
     message,    -- The content of the notification
@@ -44,7 +44,7 @@ exports['ahrp-notify']:notify(
 #### ✅ Example:
 
 ```lua
-exports['ahrp-notify']:notify("success", "Operation Complete", "Your changes were saved successfully!", 5000)
+exports['milanscripts-notify']:notify("success", "Operation Complete", "Your changes were saved successfully!", 5000)
 ```
 
 ---
@@ -52,7 +52,7 @@ exports['ahrp-notify']:notify("success", "Operation Complete", "Your changes wer
 ### # SERVER
 
 ```lua
-exports['ahrp-notify']:notify(
+exports['milanscripts-notify']:notify(
     "src/playerId[,playerId2,...]",  -- Target(s): one or more player IDs in the format "src/ID"
     type,                            -- "success", "error", "info", "warning"
     title,                           -- Notification title
@@ -64,7 +64,7 @@ exports['ahrp-notify']:notify(
 #### ✅ Example:
 
 ```lua
-exports['ahrp-notify']:notify("src/1", "error", "Action Failed", "You do not have permission to do that.", 4000)
+exports['milanscripts-notify']:notify("src/1", "error", "Action Failed", "You do not have permission to do that.", 4000)
 ```
 
 ---
